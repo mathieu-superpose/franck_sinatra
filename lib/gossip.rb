@@ -27,7 +27,7 @@ class Gossip
 		return table[id]
 	end
 
-	def self.replace(id, gossip_author, gossip_content)
+	def self.update(id, gossip_author, gossip_content)
 		table = CSV.read("./db/gossip.csv")
 		table[id] = [gossip_author, gossip_content]
 
