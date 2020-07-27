@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Mon super site de gossip !</h1>
+    <a href="/gossips/new/">Ajoutez vos potins</a>
+
+    <h2>liste des gossips</h2>
+    <% gossips.each_with_index do |gossip, index| %></br>
+          
+          <a href="/gossips/<%=index%>/"><%= "gossip n° #{index}" %></a>
+          <p>
+          <%= gossip.gossip_author %><br/>
+          <%= gossip.gossip_content %>
+          <!-- <a href="/gossips/<%=index%>/edit/">Editer le potin</a> -->
+        </p>
+      <% end %>
+  </body>
+</html>
