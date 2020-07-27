@@ -27,15 +27,14 @@ class Gossip
 		return table[id]
 	end
 
-	# def self.replace(id, gossip_author, gossip_content)
-	# 	table = CSV.read("./db/gossip.csv")
-	# 	table[id] = [gossip_author, gossip_content]
-	# 	end
+	def self.replace(id, gossip_author, gossip_content)
+		table = CSV.read("./db/gossip.csv")
+		table[id] = [gossip_author, gossip_content]
 
-	# 	CSV.open("./db/gossip.csv", "w") do |csv| 
-	# 		table.each do |row|
-	# 			csv << row
-	# 		end
-	# 	end
-	# end
+		CSV.open("./db/gossip.csv", "w") do |csv| 
+			table.each do |row|
+				csv << row
+			end
+		end
+	end
 end
