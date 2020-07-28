@@ -27,7 +27,7 @@ Dans un navigateur:
 
 ## Améliorations possibles
 
-- Commenter les potins dans les pages spécifiques aux potins
+- Commenter les potins dans les pages show
 - Habiller le site
 - Ajouter un soupson d'humour
 
