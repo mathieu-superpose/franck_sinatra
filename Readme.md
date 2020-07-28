@@ -3,6 +3,8 @@ _potins sérieux et minimalistes_
 
 Projet de micro interface de potins dans le cadre de The Hacking Project S13
 
+en utilisant la gem Sinatra (https://github.com/sinatra/sinatra)
+
 
 ### Installation et démarrage
 
